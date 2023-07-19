@@ -47,16 +47,16 @@ function Search() {
           Shorten It!
         </button>
       </form>
-      <div className='results text-white  bg-gray-300 rounded-lg py-6 px-2 flex flex-col lg:flex-row justify-between items-start'>
-        <article>
+      <div className='results text-white  bg-gray-300 rounded-lg py-6 px-6 flex flex-col lg:flex-row justify-between '>
+        <article className="text-black">
           <h6>{links.original_link}</h6>
         </article>
-        <div className='h-[0.5px] bg-white w-full  block lg:hidden' />
+        <div className='h-[0.5px] bg-white w-full  block lg:hidden my-3' />
 
-        <article className='flex flex-col lg:flex-row justify-between items-center'>
-          <h6 className='text-[#2ACFCF]'>{links.full_short_link}</h6>
+        <article className='flex flex-col lg:flex-row justify-between   '>
+          <h6 className='text-[#2ACFCF] w-full px-3'>{links.full_short_link}</h6>
           <button
-            className='bg-[#2ACFCF] text-sm  text-white px-4 py-2 rounded-3xl hover:bg-[#62ebeb] w-fu'
+            className='bg-[#2ACFCF] text-sm  text-white px-4 py-2 rounded-md hover:bg-[#62ebeb] w-full lg:w-fit'
             onClick={handleCopy}
           >
             {buttonText}
