@@ -4,6 +4,7 @@ function Search() {
   const [text, setText] = useState("");
   const [links, setLinks] = useState([]);
   const [buttonText, setbuttonText] = useState("Copy");
+  const [displayResult, setDisplayResult] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +16,7 @@ function Search() {
         const data = await res.json();
         console.log(data);
         setLinks(data.result);
+        setDisplayResult(true);
         setText("");
       };
       getLink();
@@ -47,22 +49,27 @@ function Search() {
           Shorten It!
         </button>
       </form>
-      <div className='results text-white  bg-gray-300 rounded-lg py-6 px-6 flex flex-col lg:flex-row justify-between '>
-        <article className="text-black">
-          <h6>{links.original_link}</h6>
-        </article>
-        <div className='h-[0.5px] bg-white w-full  block lg:hidden my-3' />
 
-        <article className='flex flex-col lg:flex-row justify-between   '>
-          <h6 className='text-[#2ACFCF] w-full px-3'>{links.full_short_link}</h6>
-          <button
-            className='bg-[#2ACFCF] text-sm  text-white px-4 py-2 rounded-md hover:bg-[#62ebeb] w-full lg:w-fit'
-            onClick={handleCopy}
-          >
-            {buttonText}
-          </button>
-        </article>
-      </div>
+      {displayResult ? (
+        <div className='results text-white  bg-gray-300 rounded-lg py-6 px-6 flex flex-col lg:flex-row justify-between '>
+          <article className='text-black'>
+            <h6>{links.original_link}</h6>
+          </article>
+          <div className='h-[0.5px] bg-white w-full  block lg:hidden my-3' />
+
+          <article className='flex flex-col lg:flex-row justify-between   '>
+            <h6 className='text-[#2ACFCF] w-full px-3'>
+              {links.full_short_link}
+            </h6>
+            <button
+              className='bg-[#2ACFCF] text-sm  text-white px-4 py-2 rounded-md hover:bg-[#62ebeb] w-full lg:w-fit'
+              onClick={handleCopy}
+            >
+              {buttonText}
+            </button>
+          </article>
+        </div>
+      ) : null}
     </section>
   );
 }
