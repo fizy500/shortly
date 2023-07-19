@@ -1,39 +1,11 @@
-import Logo from '../assets/logo.svg'
+import Logo from "../assets/logo.svg";
+import { useState } from "react";
 
-// export default function Header () {
-//   return (
-//     <header className='max-width'>
-//       <div className=''>
-//         <img src={logo} alt='' />
-//         <nav>
-//           <ul>
-//             <li>
-//               <button> Features</button>
-//             </li>
-//             <li>
-//               <button>Pricing</button>
-//             </li>
-//             <li>
-//               <button>Resources</button>
-//             </li>
-//           </ul>
-//         </nav>
-//       </div>
-
-//       <ul>
-//         <li>Login</li>
-//         <li>Sign Up</li>
-//       </ul>
-//     </header>
-//   )
-// }
-
-import { useState } from 'react'
-function Navbar () {
-  const [isOpen, setIsOpen] = useState(false)
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
   return (
     <nav className=' lg:bg-white    z-50 py-3 w-full top-0 sticky'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-20'>
@@ -43,21 +15,21 @@ function Navbar () {
               <img src={Logo} alt='' />
             </a>
             <div className='lg:flex items-center space-x-4 hidden'>
-              <a href='' className='text-slate-400'>
+              <a href='' className='text-slate-400 hover:text-black'>
                 Features
               </a>
-              <a href='' className='text-slate-400'>
+              <a href='' className='text-slate-400 hover:text-black'>
                 Pricing
               </a>
-              <a href='' className='text-slate-400'>
+              <a href='' className='text-slate-400 hover:text-black'>
                 Resources
               </a>
             </div>
           </div>
           <div className='hidden md:block'>
             <div className='ml-10 flex items-baseline space-x-4'>
-              <button className='text-slate-400'>Login</button>
-              <button className='bg-[#2ACFCF]  text-white px-4 py-2 rounded-3xl'>
+              <button className='text-slate-400 hover:text-black'>Login</button>
+              <button className='bg-[#2ACFCF] hover:bg-[#62ebeb] text-white px-4 py-2 rounded-3xl'>
                 Sign Up
               </button>
 
@@ -74,7 +46,7 @@ function Navbar () {
             >
               <span className='sr-only'>Open main menu</span>
               <svg
-                className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`}
+                className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
@@ -89,7 +61,7 @@ function Navbar () {
                 />
               </svg>
               <svg
-                className={`${isOpen ? 'block' : 'hidden'} h-6 w-6`}
+                className={`${isOpen ? "block" : "hidden"} h-6 w-6`}
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
@@ -109,30 +81,30 @@ function Navbar () {
       </div>
       <div
         className={`${
-          isOpen ? 'block' : 'hidden'
-        } md:hidden mb-10 bg-[#444347] mx-4  rounded-lg sticky`}
+          isOpen ? "block" : "hidden"
+        } md:hidden mb-10 bg-[#3B3054] py-20 mx-4  rounded-lg sticky`}
         id='mobile-menu'
       >
-        <div className='px-2 pt-2 pb-3 space-y-2 sm:px-6 text-center flex flex-col items-center justify-center'>
-          <a href='' className='text-slate-400'>
+        <div className='px-2 pt-2 pb-3 space-y-4 sm:px-6 text-center flex flex-col items-center justify-center'>
+          <a href='' className='text-slate-400 hover:text-black'>
             Features
           </a>
-          <a href='' className='text-slate-400'>
+          <a href='' className='text-slate-400 hover:text-black'>
             Pricing
           </a>
-          <a href='' className='text-slate-400'>
+          <a href='' className='text-slate-400 hover:text-black'>
             Resources
           </a>
           <div className='h-[0.5px] bg-white w-[90%]' />
           <button className='text-slate-400'>Login</button>
-          <button className='bg-[#2ACFCF]  text-white px-4 py-2 rounded-3xl w-full'>
+          <button className='bg-[#2ACFCF] hover:bg-[#62ebeb] text-white px-4 py-2 rounded-3xl w-full'>
             Sign Up
           </button>
           {/* Add more menu items here */}
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

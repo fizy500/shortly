@@ -11,7 +11,7 @@ export default function Hero () {
             Build your brand’s recognition and get detailed <br className='' /> insights on how your
             links are performing.
           </p>
-          <button className='bg-[#2ACFCF]  text-white px-4 py-2 rounded-3xl'>
+          <button className='bg-[#2ACFCF] hover:bg-[#62ebeb]  text-white px-4 py-2 rounded-3xl'>
             Get Started
           </button>
         </div>

@@ -12,40 +12,40 @@ function Footer () {
         </div>
         <div className='flex flex-col space-y-3'>
           <h2 className='text-white font-medium py-3'>Features</h2>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             Link Shortening
           </a>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF] '>
             Branded Links
           </a>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             Analytics
           </a>
         </div>
         <div className='flex flex-col space-y-3 '>
           <h2 className='text-white font-medium py-3'>Resources</h2>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             Blog
           </a>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             Developers
           </a>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             Support
           </a>
         </div>
         <div className='flex flex-col space-y-3'>
           <h2 className='text-white font-medium py-3'>Company</h2>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             About
           </a>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             Our Teams
           </a>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             Careers
           </a>
-          <a href='' className='text-lg text-[#BFBFBF]'>
+          <a href='' className='text-lg text-[#BFBFBF] active:text-[#2ACFCF]'>
             Contact
           </a>
         </div>
