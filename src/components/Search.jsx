@@ -4,7 +4,7 @@ function Search() {
   const [text, setText] = useState("");
   const [links, setLinks] = useState([]);
   const [buttonText, setbuttonText] = useState("Copy");
-  const [displayResult, setDisplayResult] = useState(false)
+  const [displayResult, setDisplayResult] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,7 +33,7 @@ function Search() {
       <form
         action=''
         onSubmit={handleSubmit}
-        className='flex flex-col lg:flex-row justify-center items-center  bg-[url(./assets/bg-shorten-desktop.svg)] bg-[#3B3054] bg-cover bg-center bg-no-repeat rounded-2xl py-20 px-4'
+        className='flex flex-col lg:flex-row justify-center items-center bg-[url(./assets/bg-shorten-mobile.svg)]  lg:bg-[url(./assets/bg-shorten-desktop.svg)] bg-[#3B3054] bg-cover bg-center bg-no-repeat rounded-2xl py-20 px-4'
       >
         <input
           type='search'

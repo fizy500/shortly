@@ -6,7 +6,7 @@ import InstagramIcon from '../assets/icon-instagram.svg'
 function Footer () {
   return (
     <footer className='bg-[#232127]  py-10 lg:text-left text-center px-20'>
-      <div className='flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-4 '>
+      <div className='flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-4 max-width'>
         <div>
           <img src={FooterLogo} alt='' />
         </div>
