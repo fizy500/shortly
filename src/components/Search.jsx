@@ -62,7 +62,7 @@ function Search() {
               {links.full_short_link}
             </h6>
             <button
-              className='bg-[#2ACFCF] text-sm  text-white px-4 py-2 rounded-md hover:bg-[#62ebeb] w-full lg:w-fit'
+              className='bg-[#2ACFCF] text-sm  text-white px-4 py-2 rounded-md hover:bg-[#62ebeb] focus:bg-[#3B3054] w-full lg:w-fit'
               onClick={handleCopy}
             >
               {buttonText}
